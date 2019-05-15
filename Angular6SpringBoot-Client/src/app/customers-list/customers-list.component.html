@@ -1,0 +1,14 @@
+<div class="jumbotron">    
+  <div class="bg">
+    <h1 align="center">Welcome to FoodZone</h1>
+    <div align="right">
+      <button  class="button button5" value="Logout" (click)='logout()'>Logout</button>
+    </div>
+    <div *ngFor="let customer of customers" style="width: 300px;">
+      <customer-details [customer]='customer'></customer-details>
+    </div>
+  </div>
+</div>
+
+
+
